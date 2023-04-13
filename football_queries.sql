@@ -27,4 +27,4 @@
 -- SELECT id, hometeam, awayteam, fthg, ftag, fthg + ftag AS sum_goals FROM public.matches WHERE division_code = 'E0' ORDER BY sum_goals DESC, fthg DESC;
 
 --In which division and which season were the most goals scored?
-SELECT division_code, season, SUM(fthg + ftag) AS total_goals FROM public.matches GROUP BY division_code, season ORDER BY total_goals DESC LIMIT 1;
+-- SELECT division_code, season, SUM(fthg + ftag) AS total_goals FROM public.matches GROUP BY division_code, season ORDER BY total_goals DESC LIMIT 1;
